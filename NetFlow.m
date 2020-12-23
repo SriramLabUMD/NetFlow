@@ -1,5 +1,5 @@
 function [flow] = NetFlow(model,vRef)
-%% Main function for NetFlow algorithm (Mack and Sriram, Met. Eng. Comm. 2020)
+%% Main function for NetFlow algorithm (Mack and Sriram, Met. Eng. Comm. 2021)
 % Identifyies carbon flow and carbon yield between metabolites within a
 % given metabolic model and flux map
 
