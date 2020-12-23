@@ -158,7 +158,8 @@ c2mMap = sparse(c2mMap(:,1),c2mMap(:,2),c2mMap(:,3),totCmers,m);
 end
 function [xImpCmer, wtIdx, impIso] = generateInputCDV(nCarbon,labeledAtoms)
 %% Generates the cumomer distribution vector (CDV) based on total number of carbon atoms and which atoms are 13C labeled
-% TODO: Need to correct minor hard coding for large metabolites
+% Note: For large metabolites, the CDV generation was slightly hard coded due to memory limitations in MATLAB. Since NetFlow 
+% only utilizes 1st order U-13C simulations, this is not currently a problem. Will be addressed for extension to more complex simulations.
 % Generate input IDV(s)
 if nargin == 2       
     nLabels = size(labeledAtoms,1);
